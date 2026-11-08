@@ -19,7 +19,6 @@ sampler_extension: "https://github.com/Koishi-Star/Euler-Smea-Dyn-Sampler"
 sampler_extension_version: null # TODO: original extension revision unconfirmed
 scheduler: "Karras"
 reference_steps: 20 # reference image/sampler-grid setting; varied in step comparison
-preferred_steps: 30 # later everyday-use preference, NOT a historical Showcase generation parameter
 cfg_scale: 3.5 # reference value; varied in CFG comparison
 seed: 2601892452 # author-confirmed reference seed
 
