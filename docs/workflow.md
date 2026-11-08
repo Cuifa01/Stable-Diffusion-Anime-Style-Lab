@@ -1,6 +1,6 @@
 # NeoForge SDXL Workflow — Myon_style
 
-This document describes how I use **Stable Diffusion WebUI NeoForge** to produce the **Myon_style** visual aesthetic. It separates the **current daily-use configuration** from the **historical Showcase/reference experiment**, because the values have evolved over time.
+This document describes how I use **Stable Diffusion WebUI NeoForge** to produce the **Myon_style** visual aesthetic. Current generation recommendations are documented here; earlier experiment settings are archived separately.
 
 **Myon_style** refers to my target visual style, not to an independently trained model. The existing examples use a fixed mix of artist-style tags plus the external **nyalia** LoRA. My personal **Myon_style LoRA** remains in training and is not used in the documented examples.
 
@@ -38,15 +38,15 @@ The fixed style block is the combination of artist-style tags and **[nyalia (Ill
 
 ## 3. Sampling and Base Generation
 
-| Parameter | Current personal workflow | Previously published Showcase/reference |
-| --- | --- | --- |
-| Base portrait resolution | **896 × 1152** | Original size not independently recoverable from the exported file |
-| Sampling steps | **30 preferred** | **20** |
-| CFG scale | **3.5 preferred** | **3.5** (except CFG comparison) |
-| Sampler / Scheduler | Kohaku LoNyu Yog / Karras | Kohaku LoNyu Yog / Karras (except sampler comparison) |
-| Checkpoint | WAI-illustrious-SDX family; versions above 15.0 used in my workflow | `waiNSFWIllustrious_v150` |
-| Seed | Chosen per generation | `2601892452` |
-| Batch count / size | **1 / 1** as recorded in my NeoForge UI | Not independently recoverable from the Showcase export |
+| Parameter | Current / recommended configuration |
+| --- | --- |
+| Base portrait resolution | **896 × 1152** |
+| Sampling steps | **15–30 recommended** |
+| CFG scale | **Around 4.5 recommended; 3.5 personally preferred** |
+| Sampler / Scheduler | Kohaku LoNyu Yog / Karras |
+| Checkpoint | WAI-illustrious-SDX family; versions above 15.0 used in my workflow |
+| Seed | Chosen per generation |
+| Batch count / size | **1 / 1** as recorded in my NeoForge UI |
 
 **Resolution update:** My latest confirmed regular portrait setting is **896 × 1152**. A previous NeoForge UI capture listed **832 × 1152**. The latest value is the current preference, but neither screenshot nor the exported **1479 × 2048** Showcase file establishes the actual initial resolution of that older Showcase generation. Its exported PNG does not include readable parameter metadata.
 
@@ -82,8 +82,8 @@ After generation, I visually inspect facial expressions, local anatomy, linework
 | Comparison | What I observed |
 | --- | --- |
 | **Sampler**: Euler / Euler a / Kohaku LoNyu Yog | In the published examples, Kohaku gives my preferred structure and cleaner overall shading; Euler variants show some artifacts |
-| **Steps**: 5 / 10 / 15 / 20 / 30 / 40 | Lower step values can be less resolved; I generally prefer 30 for everyday use, whereas the Showcase used 20 |
-| **CFG**: 1.0 through 6.0 | Values below 3.5 can look grayer and less detailed; higher values emphasize outlines. My preference is 3.5 |
+| **Steps**: 5 / 10 / 15 / 20 / 30 / 40 | Lower step values can be less resolved; 15–30 is my recommended range |
+| **CFG**: 1.0 through 6.0 | Values below 3.5 can look grayer and less detailed; higher values emphasize outlines. Around 4.5 is recommended; I personally prefer 3.5 |
 | **ADetailer** | An initial comparison image exists; full matched test parameters remain to be recorded |
 
 See [`comparisons.md`](comparisons.md) for the existing grids and descriptive observations, including the [CFG comparison image](../examples/comparisons/cfg-comparison.jpg).
@@ -96,7 +96,7 @@ These are personal visual studies, **not statistical benchmarks**. Where possibl
 2. Load a suitable **WAI-illustrious-SDX / WAI-Illustrious** checkpoint with its already configured/default VAE.
 3. Install the [Euler-Smea-Dyn-Sampler extension](https://github.com/Koishi-Star/Euler-Smea-Dyn-Sampler) if needed for **Kohaku LoNyu Yog**.
 4. Follow the six-part prompt layout in [`prompt-structure.md`](prompt-structure.md) and apply [`signature-style.txt`](../style/signature-style.txt).
-5. For my **current** portrait workflow, start with **896 × 1152**, **Karras**, **30 steps**, and **CFG 3.5**; the showcased historical baseline uses **20 steps** and seed `2601892452`.
+5. For my portrait workflow, use **896 × 1152**, **Karras**, **15–30 steps**, and **CFG around 4.5** (I personally prefer **3.5**).
 6. Optionally apply **ADetailer** or **Hires.fix**, recording their settings if you are preparing an experiment.
 7. Evaluate the result visually and document any changed parameter.
 
