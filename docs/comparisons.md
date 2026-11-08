@@ -13,14 +13,12 @@ The following are the **author-confirmed historical Showcase1 reference settings
 | Checkpoint | `waiNSFWIllustrious_v150` | Not varied in the documented grids |
 | Sampler | Kohaku LoNyu Yog | Sampler comparison |
 | Scheduler | Karras | Fixed; no scheduler comparison published |
-| Steps | **20** | Steps comparison |
-| CFG scale | **3.5** | CFG comparison |
 | Seed | `2601892452` | Not deliberately varied |
 | Style LoRA | **nyalia**, weight `0.6` | Fixed Signature Style Preset |
 
-The author reports that the grids use the same Showcase-style configuration except for the parameter being compared. The supplied exported Showcase image contains **no readable generation metadata**, so these settings should not be presented as independently recovered from the image.
+The author reports that the grids use the same Showcase-style configuration except for the parameter being compared. Complete recorded reference parameters are archived in [`../configs/baseline.yaml`](../configs/baseline.yaml). The supplied exported Showcase image contains **no readable generation metadata**, so these settings should not be presented as independently recovered from the image.
 
-The **current daily-use settings** are different: regular portrait resolution **896 × 1152**, typically **30 steps**, CFG **3.5**, and a **WAI-Illustrious SDXL-family checkpoint above v15.0**. The older Showcase's *initial* resolution is not independently known from its exported file. See [`../configs/baseline.yaml`](../configs/baseline.yaml) for the historical record and [`../configs/personal-preferences.md`](../configs/personal-preferences.md) for current preferences.
+The **current recommended settings** include a regular portrait resolution of **896 × 1152**, **15–30 steps**, and **CFG around 4.5** (personal preference: **3.5**), with a **WAI-Illustrious SDXL-family checkpoint above v15.0**. The older Showcase's *initial* resolution is not independently known from its exported file. See [`../configs/baseline.yaml`](../configs/baseline.yaml) for the historical record and [`../configs/personal-preferences.md`](../configs/personal-preferences.md) for current preferences.
 
 ## 1. Sampler — Euler / Euler a / Kohaku LoNyu Yog
 
@@ -34,15 +32,15 @@ Source of the preferred sampler: [Koishi-Star/Euler-Smea-Dyn-Sampler](https://gi
 
 ![Sampling-step comparison](../examples/comparisons/steps-comparison.jpg)
 
-Lower-step results are less resolved in parts of the illustration. Higher step counts alter fine details but do not yield a universally linear quality increase. The historical Showcase uses **20 steps**; **30 steps** is the author's current everyday preference.
+Lower-step results are less resolved in parts of the illustration. Higher step counts alter fine details but do not yield a universally linear quality increase. **15–30 steps** is the recommended range.
 
 ## 3. CFG — 1.0 / 2.0 / 3.0 / 3.5 / 4.0 / 4.5 / 5.0 / 6.0
 
 ![CFG scale comparison from 1.0 through 6.0](../examples/comparisons/cfg-comparison.jpg)
 
-In this comparison, CFG values **below 3.5** appear grayer and lose some of the preferred style's detail. At **3.5 and above**, colors and contours become clearer, while increasing CFG further strengthens the outlines. The author prefers **CFG 3.5** as a balance; higher tested values can also work.
+In this comparison, CFG values **below 3.5** appear grayer and lose some of the preferred style's detail. At **3.5 and above**, colors and contours become clearer, while increasing CFG further strengthens the outlines. **CFG around 4.5** is recommended, while **3.5** is the author's personal preference.
 
-These are style-specific visual observations, not proof that CFG 3.5 is optimal in general.
+These are style-specific visual observations, not a claim of a universally optimal CFG value.
 
 ## 4. ADetailer — Existing Initial Comparison
 
