@@ -11,7 +11,7 @@ A personal anime-style image generation project built around **Stable Diffusion 
 **Myon_style** is the name I use for my preferred visual style: **cute anime portraits, soft cel shading, clean line art, expressive faces, and minimal graphic backgrounds**. I prioritize the character's face, silhouette, and cohesive shading over complex scenery.
 
 <p align="center">
-  <img src="examples/showcase/representative-result.png" alt="Myon_style representative anime illustration" width="520">
+  <img src="examples/showcase/representative-result.png" alt="Myon_style representative anime illustration">
 </p>
 
 The visual style is produced using a Signature Style Preset combining artist-style tags and a LoRA. Detailed settings are documented in `style/signature-style.txt`.
