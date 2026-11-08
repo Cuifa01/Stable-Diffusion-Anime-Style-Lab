@@ -25,7 +25,7 @@ The visual style is produced using a Signature Style Preset combining artist-sty
 | Interface | **Stable Diffusion WebUI NeoForge** |
 | Checkpoint family | **WAI-illustrious-SDX / WAI-Illustrious (SDXL-based)** |
 | Model compatibility | In my own workflow, **WAI-Illustrious versions above 15.0** can be used; image results may vary by version |
-| VAE | Using the VAE configuration provided by the checkpoint/default setup; no separate VAE selection is required in my current workflow |
+| VAE | VAE configuration provided by the checkpoint |
 | Base portrait resolution | **896 × 1152** |
 | Sampler / Scheduler | **Kohaku LoNyu Yog / Karras** |
 | Sampling steps | **15–30 recommended** |
