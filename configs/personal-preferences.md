@@ -11,8 +11,8 @@ This file records **current personal settings** for the **Myon_style** visual st
 | VAE | **Checkpoint/default VAE configuration** | Already configured for the author's current setup; no manual separate VAE selection needed |
 | Sampler | **Kohaku LoNyu Yog** | Provided by the [Euler-Smea-Dyn-Sampler extension](https://github.com/Koishi-Star/Euler-Smea-Dyn-Sampler) |
 | Scheduler | **Karras** | Personal preference |
-| Sampling steps | **30 preferred** | The earlier Showcase/reference used 20 |
-| CFG scale | **3.5 preferred** | Based on the author's visual comparisons |
+| Sampling steps | **15–30 recommended** | Current generation recommendation |
+| CFG scale | **Around 4.5 recommended; 3.5 personally preferred** | Based on the author's visual comparisons |
 | Batch count / batch size | **1 / 1** | Earlier NeoForge UI capture |
 
 **Resolution correction:** An earlier NeoForge screenshot, supplied on 2026-10-14, showed **832 × 1152**. The author's subsequent explicit clarification established **896 × 1152 as the regular/current portrait starting resolution**. Both are historical facts about different records; the old value should not be used as the current default.
@@ -21,7 +21,7 @@ This file records **current personal settings** for the **Myon_style** visual st
 
 ## Why I Prefer CFG 3.5
 
-I compared **1.0 / 2.0 / 3.0 / 3.5 / 4.0 / 4.5 / 5.0 / 6.0** using the Showcase-style setup. Values below **3.5** appeared grayer and less detailed, while values from **3.5 upward** showed clearer lines; increasing CFG further emphasized the outlines. **3.5** is my preferred balance, although higher values were also usable in this style.
+I compared **1.0 / 2.0 / 3.0 / 3.5 / 4.0 / 4.5 / 5.0 / 6.0** using the Showcase-style setup. Values below **3.5** appeared grayer and less detailed, while values from **3.5 upward** showed clearer lines; increasing CFG further emphasized the outlines. **Around 4.5** is my recommendation, while **3.5** remains my personal preference.
 
 The [CFG comparison grid](../examples/comparisons/cfg-comparison.jpg) is available in the repository. These are qualitative personal observations, not a general optimum or a numerical quality claim.
 
@@ -46,8 +46,6 @@ The relatively low denoising strength is intended to preserve the initial image'
 | --- | --- | --- |
 | Checkpoint | `waiNSFWIllustrious_v150` (previously documented reference) | WAI-illustrious-SDX / WAI-Illustrious family; author uses versions above 15.0 |
 | Base portrait resolution | **Unknown** from the exported Showcase PNG | **896 × 1152** |
-| Sampling steps | **20** | **30 preferred** |
-| CFG | **3.5**, except when explicitly varied | **3.5 preferred** |
 | Seed | `2601892452` | Selected per image |
 | VAE | Historical VAE choice is not independently recoverable | Checkpoint/default VAE configuration |
 
