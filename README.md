@@ -14,7 +14,7 @@ A personal anime-style image generation project built around **Stable Diffusion 
   <img src="examples/showcase/representative-result.png" alt="Myon_style representative anime illustration" width="520">
 </p>
 
-The current visual result uses a **Signature Style Preset** consisting of artist-style tags and the existing [nyalia (Illustrious) LoRA](https://civitai.com/models/834822/nyalia-illustrious) at weight `0.6`. The exact preset is in [`style/signature-style.txt`](style/signature-style.txt).
+The visual style is produced using a **Signature Style Preset** combining artist-style tags and a **LoRA**. Detailed settings are documented in [`style/signature-style.txt`](style/signature-style.txt).
 
 **Naming distinction:** `Myon_style` names my visual style. A separate personal **Myon_style LoRA** is currently in the **dataset curation stage** and is **not** the LoRA used to produce the published examples.
 
