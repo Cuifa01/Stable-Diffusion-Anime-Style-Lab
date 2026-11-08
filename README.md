@@ -4,7 +4,7 @@
 
 A personal anime-style image generation project built around **Stable Diffusion WebUI NeoForge** and the **WAI-illustrious-SDX / Illustrious SDXL** model family. The focus is a clearly documented **generation configuration** for a consistent anime style.
 
-> **Scope:** This repository documents a personal generation setup and visual experiments. It does not claim a new diffusion algorithm or a completed, self-trained model.
+> **Scope:** This repository documents a personal generation setup and visual experiments. It does not claim a new diffusion algorithm or a visually evaluated, released model.
 
 ## 1. Myon_style — Visual Goal
 
@@ -16,7 +16,7 @@ A personal anime-style image generation project built around **Stable Diffusion 
 
 The visual style is produced using a Signature Style Preset combining artist-style tags and a LoRA. Detailed settings are documented in `style/signature-style.txt`.
 
-**Naming distinction:** `Myon_style` names my visual style. A separate personal **Myon_style LoRA** is currently in the **dataset curation stage** and is **not** the LoRA used to produce the published examples.
+**Naming distinction:** `Myon_style` names my visual style. A separate personal **Myonstyle_v1 LoRA** completed its first formal training on 2026-11-05; visual evaluation is pending. It is **not** the LoRA used to produce the published examples.
 
 ## 2. NeoForge SDXL Configuration
 
@@ -82,13 +82,13 @@ Further notes: [`docs/comparisons.md`](docs/comparisons.md).
 | [`style/signature-style.txt`](style/signature-style.txt) | Reusable current style preset (artist tags + nyalia) |
 | [`configs/baseline.yaml`](configs/baseline.yaml) | Historical Showcase/comparison reference |
 | [`configs/personal-preferences.md`](configs/personal-preferences.md) | Earlier recorded personal UI settings; see latest 896 × 1152 update above |
-| [`experiments/lora-training.md`](experiments/lora-training.md) | **Myon_style LoRA — dataset audit, v1 training plan and evaluation tracking**; no released checkpoint yet |
+| [`experiments/lora-training.md`](experiments/lora-training.md) | **Myon_style LoRA — dataset audit, first formal training results and evaluation tracking**; no released checkpoint yet |
 | [`configs/myonstyle-v1-initial.toml`](configs/myonstyle-v1-initial.toml) | First selected SDXL LoRA training settings (initial snapshot; local-specific values omitted) |
 
 ## 5. Project History & Ongoing Experiments
 
 I began putting this personal workflow into practice in **July 2025** and only **recently organized and uploaded** the material to GitHub.
 
-My personal **Myon_style LoRA** has a **45-image / 45-caption dataset audit** and a documented initial training configuration; model training results are not yet confirmed. It belongs to the project's future **Experiments** workstream; no trained weights, performance results, or completed model are claimed here. Training notes and planned documentation are tracked in [`experiments/lora-training.md`](experiments/lora-training.md).
+My personal **Myonstyle_v1 LoRA** completed 1,125/1,125 optimizer steps with Ostris AI Toolkit on 2026-11-05 using 45 paired images and captions. Five training checkpoints were saved, while visual quality and generalization remain unevaluated. No weights are released here. The historical initial SD-Trainer configuration and formal training curves are tracked in [`experiments/lora-training.md`](experiments/lora-training.md).
 
 The current priority is documenting clear **NeoForge + SDXL configuration and visual comparisons**, with honest separation between the established generation setup, existing visual comparisons, and experiments still in progress.
