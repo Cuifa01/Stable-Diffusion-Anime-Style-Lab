@@ -20,7 +20,7 @@ The current visual result uses a **Signature Style Preset** consisting of artist
 
 ## 2. NeoForge SDXL Configuration
 
-| Setting | Current personal configuration |
+| Setting | Current / recommended configuration |
 | --- | --- |
 | Interface | **Stable Diffusion WebUI NeoForge** |
 | Checkpoint family | **WAI-illustrious-SDX / WAI-Illustrious (SDXL-based)** |
@@ -28,8 +28,8 @@ The current visual result uses a **Signature Style Preset** consisting of artist
 | VAE | Using the VAE configuration provided by the checkpoint/default setup; no separate VAE selection is required in my current workflow |
 | Base portrait resolution | **896 × 1152** (latest confirmed default) |
 | Sampler / Scheduler | **Kohaku LoNyu Yog / Karras** |
-| Sampling steps | **30 preferred** for everyday use; **20** recorded for the Showcase reference |
-| CFG scale | **3.5 preferred** |
+| Sampling steps | **15–30 recommended** |
+| CFG scale | **Around 4.5 recommended; 3.5 personally preferred** |
 | Prompt style | Six functional blocks separated with `BREAK` |
 | Existing style LoRA | **nyalia**, weight `0.6` (not the in-training Myon_style LoRA) |
 | ADetailer / Hires.fix | Optional refinement stages |
@@ -38,7 +38,7 @@ The full positive/negative prompt examples and six-part organization are documen
 
 For optional Hires.fix, my documented UI settings include **2× upscale**, **12 Hires steps**, **0.2 denoising**, and **Hires CFG 3**. They are preferences, not requirements for the Myon_style look.
 
-**Reference vs current settings:** The previously published Showcase/test record names `waiNSFWIllustrious_v150`, **20 steps**, CFG **3.5**, and seed `2601892452`. That historical reference is preserved in [`configs/baseline.yaml`](configs/baseline.yaml). My latest confirmed **896 × 1152** base resolution supersedes an earlier **832 × 1152** personal-settings screenshot; the exported Showcase image has no readable generation metadata, so its original base dimensions cannot be independently recovered from that export.
+The earlier Showcase/test configuration is archived in [`configs/baseline.yaml`](configs/baseline.yaml). My latest confirmed **896 × 1152** base resolution supersedes an earlier **832 × 1152** personal-settings screenshot; the exported Showcase image has no readable generation metadata, so its original base dimensions cannot be independently recovered from that export.
 
 ## 3. Visual Experiments
 
@@ -56,11 +56,11 @@ Sampler implementation: [Koishi-Star/Euler-Smea-Dyn-Sampler](https://github.com/
 
 ![Sampling steps comparison](examples/comparisons/steps-comparison.jpg)
 
-Lower step counts look less resolved in parts of the image. **30 steps** is my current preference, while the Showcase reference used **20 steps**.
+Lower step counts look less resolved in parts of the image. **15–30 steps** is my recommended range.
 
 ### CFG Scale — 1.0 to 6.0
 
-Below **3.5**, the image appears grayer and loses some characteristic detail. Higher CFG values strengthen the outlines; **3.5** is my preferred balance, although higher values can also work.
+Below **3.5**, the image appears grayer and loses some characteristic detail. Higher CFG values strengthen the outlines. **Around 4.5** is recommended, while **3.5** is my personal preference.
 
 ![Myon_style CFG scale comparison: 1.0, 2.0, 3.0, 3.5, 4.0, 4.5, 5.0, and 6.0](examples/comparisons/cfg-comparison.jpg)
 
