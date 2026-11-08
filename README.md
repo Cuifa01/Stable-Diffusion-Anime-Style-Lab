@@ -2,7 +2,7 @@
 
 **Myon_style · NeoForge SDXL Configuration & Visual Experiments**
 
-A personal anime-style image generation project built around **Stable Diffusion WebUI NeoForge** and the **WAI-illustrious-SDX / Illustrious SDXL** model family. The focus is a clearly documented **generation configuration** for a consistent anime style, together with sampler and parameter comparisons and optional image refinement settings.
+A personal anime-style image generation project built around **Stable Diffusion WebUI NeoForge** and the **WAI-illustrious-SDX / Illustrious SDXL** model family. The focus is a clearly documented **generation configuration** for a consistent anime style.
 
 > **Scope:** This repository documents a personal generation setup and visual experiments. It does not claim a new diffusion algorithm or a completed, self-trained model.
 
