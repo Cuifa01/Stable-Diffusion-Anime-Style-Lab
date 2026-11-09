@@ -16,7 +16,7 @@ A personal anime-style image generation project built around **Stable Diffusion 
 
 The visual style is produced using a Signature Style Preset combining artist-style tags and a LoRA. Detailed settings are documented in `style/signature-style.txt`.
 
-**Naming distinction:** `Myon_style` names my visual style. A separate personal **Myonstyle_v1 LoRA** completed its first formal training on 2026-11-05; visual evaluation is pending. It is **not** the LoRA used to produce the published examples.
+**Naming distinction:** `Myon_style` names my visual style. A separate personal **Myonstyle_v1 LoRA** completed its first formal training on 2026-11-05; preliminary visual comparisons are underway. It is **not** the LoRA used to produce the published examples.
 
 ## 2. NeoForge SDXL Configuration
 
@@ -31,7 +31,7 @@ The visual style is produced using a Signature Style Preset combining artist-sty
 | Sampling steps | **15–30 recommended** |
 | CFG scale | **Around 4.5 recommended; 3.5 personally preferred** |
 | Prompt style | Six functional blocks separated with `BREAK` |
-| Existing style LoRA | **nyalia**, weight `0.6` (not the in-training Myon_style LoRA) |
+| Existing style LoRA | **nyalia**, weight `0.6` (not the separately trained Myonstyle_v1 LoRA) |
 | ADetailer / Hires.fix | Optional refinement stages |
 
 The full positive/negative prompt examples and six-part organization are documented in [`docs/prompt-structure.md`](docs/prompt-structure.md). Detailed settings and refinement notes are in [`docs/workflow.md`](docs/workflow.md).
@@ -82,14 +82,14 @@ Further notes: [`docs/comparisons.md`](docs/comparisons.md).
 | [`style/signature-style.txt`](style/signature-style.txt) | Reusable current style preset (artist tags + nyalia) |
 | [`configs/baseline.yaml`](configs/baseline.yaml) | Historical Showcase/comparison reference |
 | [`configs/personal-preferences.md`](configs/personal-preferences.md) | Earlier recorded personal UI settings; see latest 896 × 1152 update above |
-| [`experiments/README.md`](experiments/README.md) | LoRA experiments index |
+| [`experiments/README.md`](experiments/README.md) | **LoRA Training** — progress summary and Gura result comparison |
 | [`experiments/lora-dataset.md`](experiments/lora-dataset.md) | Training dataset and captions |
 | [`experiments/lora-training.md`](experiments/lora-training.md) | Training setup, checkpoints, and curves |
 | [`experiments/lora-evaluation.md`](experiments/lora-evaluation.md) | Evaluation setup and initial observations |
 | [`experiments/lora-development-log.md`](experiments/lora-development-log.md) | Problems and experiment decisions |
 | [`configs/myonstyle-v1-initial.toml`](configs/myonstyle-v1-initial.toml) | First selected SDXL LoRA training settings (initial snapshot; local-specific values omitted) |
 
-## 5. Project History & Ongoing Experiments
+## 5. Project History & LoRA Training
 
 I began putting this personal workflow into practice in **July 2025** and only **recently organized and uploaded** the material to GitHub.
 
