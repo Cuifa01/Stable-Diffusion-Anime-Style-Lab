@@ -29,6 +29,6 @@ The published Sampler and Steps grids are documented against the **historical Sh
 
 The user's current regular portrait resolution is **896 × 1152**, whereas the older exported Showcase image does not contain readable generation metadata that independently confirms its initial resolution.
 
-See [`../docs/comparisons.md`](../docs/comparisons.md) and [`../configs/baseline.yaml`](../configs/baseline.yaml). The personal **Myonstyle v1 LoRA** [completed training](../experiments/lora-training.md), but was not used to produce these published grids.
+See [`../docs/comparisons.md`](../docs/comparisons.md) and [`../configs/baseline.yaml`](../configs/baseline.yaml). The personal **Myonstyle v1 LoRA** [completed training](../lora-training/lora-training.md), but was not used to produce these published grids.
 
 No model or LoRA weights are distributed in this repository.

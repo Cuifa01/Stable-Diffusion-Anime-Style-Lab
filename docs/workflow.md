@@ -104,4 +104,4 @@ Exact reproduction of the historical Showcase still depends on further environme
 
 ## 7. Ongoing Development
 
-The broader project began in **July 2025** and was uploaded to GitHub more recently. A separate **Myonstyle v1 LoRA** completed its first training run and is evaluated separately in [Experiments](../experiments/README.md). No weights are released here.
+The broader project began in **July 2025** and was uploaded to GitHub more recently. A separate **Myonstyle v1 LoRA** completed its first training run and is evaluated separately in [LoRA Training](../lora-training/README.md). No weights are released here.

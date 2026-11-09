@@ -2,7 +2,7 @@
 
 These examples document **personal visual observations** within the **Myon_style** aesthetic, using Stable Diffusion WebUI **NeoForge** and an Illustrious SDXL-family checkpoint. They are **not statistical benchmarks** or claims of general sampler superiority.
 
-**Style/LoRA distinction:** `Myon_style` names the author's aesthetic, not a finished custom model. The existing examples use a fixed artist-style preset and the external **nyalia** LoRA at weight `0.6`. The separately trained **Myonstyle v1 LoRA** does not appear in these historical results; see [LoRA evaluation](../experiments/lora-evaluation.md).
+**Style/LoRA distinction:** `Myon_style` names the author's aesthetic, not a finished custom model. The existing examples use a fixed artist-style preset and the external **nyalia** LoRA at weight `0.6`. The separately trained **Myonstyle v1 LoRA** does not appear in these historical results; see [LoRA evaluation](../lora-training/lora-evaluation.md).
 
 ## Reference Setup and Experimental Scope
 

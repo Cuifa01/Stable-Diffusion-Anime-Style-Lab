@@ -82,17 +82,17 @@ Further notes: [`docs/comparisons.md`](docs/comparisons.md).
 | [`style/signature-style.txt`](style/signature-style.txt) | Reusable current style preset (artist tags + nyalia) |
 | [`configs/baseline.yaml`](configs/baseline.yaml) | Historical Showcase/comparison reference |
 | [`configs/personal-preferences.md`](configs/personal-preferences.md) | Earlier recorded personal UI settings; see latest 896 × 1152 update above |
-| [`experiments/README.md`](experiments/README.md) | **LoRA Training** — progress summary and Gura result comparison |
-| [`experiments/lora-dataset.md`](experiments/lora-dataset.md) | Training dataset and captions |
-| [`experiments/lora-training.md`](experiments/lora-training.md) | Training setup, checkpoints, and curves |
-| [`experiments/lora-evaluation.md`](experiments/lora-evaluation.md) | Evaluation setup and initial observations |
-| [`experiments/lora-development-log.md`](experiments/lora-development-log.md) | Problems and experiment decisions |
+| [`lora-training/README.md`](lora-training/README.md) | **LoRA Training** — progress summary and Gura result comparison |
+| [`lora-training/lora-dataset.md`](lora-training/lora-dataset.md) | Training dataset and captions |
+| [`lora-training/lora-training.md`](lora-training/lora-training.md) | Training setup, checkpoints, and curves |
+| [`lora-training/lora-evaluation.md`](lora-training/lora-evaluation.md) | Evaluation setup and initial observations |
+| [`lora-training/lora-development-log.md`](lora-training/lora-development-log.md) | Problems and experiment decisions |
 | [`configs/myonstyle-v1-initial.toml`](configs/myonstyle-v1-initial.toml) | First selected SDXL LoRA training settings (initial snapshot; local-specific values omitted) |
 
 ## 5. Project History & LoRA Training
 
 I began putting this personal workflow into practice in **July 2025** and only **recently organized and uploaded** the material to GitHub.
 
-My personal **Myonstyle_v1 LoRA** completed 1,125/1,125 optimizer steps with Ostris AI Toolkit on 2026-11-05 using 45 paired images and captions. Five training checkpoints were saved. Preliminary visual comparisons led to a wider weight range and additional character tests; generalization has not been established. No weights are released here. The formal training run and curves are in [`experiments/lora-training.md`](experiments/lora-training.md), with test design in [`experiments/lora-evaluation.md`](experiments/lora-evaluation.md).
+My personal **Myonstyle_v1 LoRA** completed 1,125/1,125 optimizer steps with Ostris AI Toolkit on 2026-11-05 using 45 paired images and captions. Five training checkpoints were saved. Preliminary visual comparisons led to a wider weight range and additional character tests; generalization has not been established. No weights are released here. The formal training run and curves are in [`lora-training/lora-training.md`](lora-training/lora-training.md), with test design in [`lora-training/lora-evaluation.md`](lora-training/lora-evaluation.md).
 
 The current priority is documenting clear **NeoForge + SDXL configuration and visual comparisons**, with honest separation between the established generation setup, existing visual comparisons, and experiments still in progress.
