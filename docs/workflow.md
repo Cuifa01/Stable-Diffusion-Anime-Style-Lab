@@ -2,7 +2,7 @@
 
 This document describes how I use **Stable Diffusion WebUI NeoForge** to produce the **Myon_style** visual aesthetic. Current generation recommendations are documented here; earlier experiment settings are archived separately.
 
-**Myon_style** refers to my target visual style, not to an independently trained model. The existing examples use a fixed mix of artist-style tags plus the external **nyalia** LoRA. My personal **Myon_style LoRA** remains in training and is not used in the documented examples.
+**Myon_style** refers to my target visual style, not to an independently trained model. The existing examples use a fixed mix of artist-style tags plus the external **nyalia** LoRA. My personal **Myonstyle v1 LoRA** completed its first training run and is not used in the documented examples.
 
 ## 1. Model and Environment Setup
 
@@ -34,7 +34,7 @@ This lets me modify pose, character, outfit, and background while keeping the ch
 
 The fixed style block is the combination of artist-style tags and **[nyalia (Illustrious)](https://civitai.com/models/834822/nyalia-illustrious)** at weight `0.6`. It is stored as [`../style/signature-style.txt`](../style/signature-style.txt), with complete positive and negative prompt examples in [`prompt-structure.md`](prompt-structure.md).
 
-**Important:** This existing `nyalia` LoRA is not my personal `Myon_style` LoRA, which is still under training. The current preset should not be rewritten as though the new model were finished.
+**Important:** This existing `nyalia` LoRA is not my personal `Myon_style` LoRA, which completed training and is under evaluation. The original preset should not be attributed to the trained model.
 
 ## 3. Sampling and Base Generation
 
@@ -104,4 +104,4 @@ Exact reproduction of the historical Showcase still depends on further environme
 
 ## 7. Ongoing Development
 
-The broader project began in **July 2025** and was uploaded to GitHub more recently. Training of a separate **Myon_style LoRA** is **in progress** and is treated as an **Experiments** workstream, distinct from the already documented NeoForge generation workflow. No training outcome, accuracy, or released LoRA weights are claimed. See the [Myon_style LoRA training record](../experiments/lora-training.md) for status and planned documentation.
+The broader project began in **July 2025** and was uploaded to GitHub more recently. A separate **Myonstyle v1 LoRA** completed its first training run and is evaluated separately in [Experiments](../experiments/README.md). No weights are released here.

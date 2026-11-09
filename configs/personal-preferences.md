@@ -17,7 +17,7 @@ This file records **current personal settings** for the **Myon_style** visual st
 
 **Resolution correction:** An earlier NeoForge screenshot, supplied on 2026-10-14, showed **832 × 1152**. The author's subsequent explicit clarification established **896 × 1152 as the regular/current portrait starting resolution**. Both are historical facts about different records; the old value should not be used as the current default.
 
-**Style and LoRA naming:** `Myon_style` names the visual style. The published workflow's fixed preset currently uses artist-style tags and the external [nyalia LoRA](https://civitai.com/models/834822/nyalia-illustrious) at weight `0.6`. A separate **Myon_style LoRA** is still being trained and is **not** part of this published generation configuration.
+**Style and LoRA naming:** `Myon_style` names the visual style. The published workflow's fixed preset currently uses artist-style tags and the external [nyalia LoRA](https://civitai.com/models/834822/nyalia-illustrious) at weight `0.6`. A separate **Myonstyle v1 LoRA** completed training and is being evaluated; it is **not** part of this published generation configuration.
 
 ## Why I Prefer CFG 3.5
 
